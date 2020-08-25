@@ -1,0 +1,36 @@
+2020-08-24 09:22:43.085 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_add, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ? 
+2020-08-24 09:22:43.163 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==> Parameters: 1(Long)
+2020-08-24 09:22:43.200 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - <==      Total: 1
+2020-08-24 09:22:43.217 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAdd is: upload\item\shop\1\2020082409224372333.jpg
+2020-08-24 09:22:43.217 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete add is: D:\JavaProject\image\upload\item\shop\1\2020082409224372333.jpg
+2020-08-24 09:22:43.217 [main] DEBUG com.imooc.o2o.util.ImageUtil - basepath is: /C:/Users/luoyi/IdeaProjects/o2o/target/test-classes/
+2020-08-24 09:22:43.574 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name=?, shop_img=?, last_edit_time=? where shop_id=? 
+2020-08-24 09:22:43.578 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - ==> Parameters: 修改后的店铺名称(String), upload\item\shop\1\2020082409224372333.jpg(String), 2020-08-24 09:22:43.538(Timestamp), 1(Long)
+2020-08-24 09:22:43.582 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - <==    Updates: 1
+2020-08-24 09:22:43.583 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_add, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ? 
+2020-08-24 09:22:43.583 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==> Parameters: 1(Long)
+2020-08-24 09:22:43.586 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - <==      Total: 1
+2020-08-24 09:23:25.320 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_add, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ? 
+2020-08-24 09:23:25.398 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==> Parameters: 1(Long)
+2020-08-24 09:23:25.441 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - <==      Total: 1
+2020-08-24 09:23:25.455 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAdd is: upload\item\shop\1\2020082409232566352.jpg
+2020-08-24 09:23:25.456 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete add is: D:\JavaProject\image\upload\item\shop\1\2020082409232566352.jpg
+2020-08-24 09:23:25.456 [main] DEBUG com.imooc.o2o.util.ImageUtil - basepath is: /C:/Users/luoyi/IdeaProjects/o2o/target/test-classes/
+2020-08-24 09:23:25.721 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name=?, shop_img=?, last_edit_time=? where shop_id=? 
+2020-08-24 09:23:25.725 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - ==> Parameters: 修改后的店铺名称(String), upload\item\shop\1\2020082409232566352.jpg(String), 2020-08-24 09:23:25.684(Timestamp), 1(Long)
+2020-08-24 09:23:25.730 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - <==    Updates: 1
+2020-08-24 09:23:25.731 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_add, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ? 
+2020-08-24 09:23:25.732 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==> Parameters: 1(Long)
+2020-08-24 09:23:25.734 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - <==      Total: 1
+2020-08-24 09:57:51.365 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_add, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ? 
+2020-08-24 09:57:51.441 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==> Parameters: 1(Long)
+2020-08-24 09:57:51.476 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - <==      Total: 1
+2020-08-24 09:57:51.488 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAdd is: upload\item\shop\1\2020082409575193934.jpg
+2020-08-24 09:57:51.488 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete add is: D:\JavaProject\image\upload\item\shop\1\2020082409575193934.jpg
+2020-08-24 09:57:51.488 [main] DEBUG com.imooc.o2o.util.ImageUtil - basepath is: /C:/Users/luoyi/IdeaProjects/o2o/target/test-classes/
+2020-08-24 09:57:51.765 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name=?, shop_img=?, last_edit_time=? where shop_id=? 
+2020-08-24 09:57:51.767 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - ==> Parameters: 修改后的店铺名称2(String), upload\item\shop\1\2020082409575193934.jpg(String), 2020-08-24 09:57:51.725(Timestamp), 1(Long)
+2020-08-24 09:57:51.774 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - <==    Updates: 1
+2020-08-24 09:57:51.775 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_add, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id = ? 
+2020-08-24 09:57:51.775 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - ==> Parameters: 1(Long)
+2020-08-24 09:57:51.778 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryByShopId - <==      Total: 1

@@ -1,0 +1,1 @@
+2020-08-22 16:29:06.492 [main] ERROR com.imooc.o2o.util.ImageUtil - net.coobird.thumbnailator.tasks.UnsupportedFormatException: No suitable ImageWriter found for jpd.
