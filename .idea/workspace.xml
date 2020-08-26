@@ -7,11 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7429208-5482-469c-b7de-0113eeb068b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/o2o/util/PageCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/o2o/dao/ShopDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/o2o/dao/ShopDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/webapps/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/webapps/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/ShopService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/impl/ShopServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/impl/ShopServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/shopadmin/ShopManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/shopadmin/ShopManagementController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/imooc/o2o/dao/ShopDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/imooc/o2o/dao/ShopDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/imooc/o2o/service/ShopServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/imooc/o2o/service/ShopServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ShopDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/ShopDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/imooc/o2o/dao/ShopDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/imooc/o2o/dao/ShopDaoTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +93,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -107,22 +113,7 @@
       <recent name="C:\Users\luoyi\IdeaProjects\o2o\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ShopDaoTest.testQueryShopList">
-    <configuration name="ShopCategoryDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="o2o" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.imooc.o2o.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.imooc.o2o.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.imooc.o2o.dao.ShopCategoryDaoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.57">
     <configuration name="ShopDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="o2o" />
       <extension name="coverage">
@@ -138,22 +129,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShopDaoTest.testQueryByShopId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="o2o" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.imooc.o2o.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.imooc.o2o.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.imooc.o2o.dao.ShopDaoTest" />
-      <option name="METHOD_NAME" value="testQueryByShopId" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ShopDaoTest.testQueryShopList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="o2o" />
       <extension name="coverage">
@@ -165,6 +140,38 @@
       <option name="PACKAGE_NAME" value="com.imooc.o2o.dao" />
       <option name="MAIN_CLASS_NAME" value="com.imooc.o2o.dao.ShopDaoTest" />
       <option name="METHOD_NAME" value="testQueryShopList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopDaoTest.testQueryShopListAndCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="o2o" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.imooc.o2o.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.imooc.o2o.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.imooc.o2o.dao.ShopDaoTest" />
+      <option name="METHOD_NAME" value="testQueryShopListAndCount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopServiceTest.testGetShopList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="o2o" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.imooc.o2o.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.imooc.o2o.service" />
+      <option name="MAIN_CLASS_NAME" value="com.imooc.o2o.service.ShopServiceTest" />
+      <option name="METHOD_NAME" value="testGetShopList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -261,20 +268,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ShopCategoryDaoTest" />
-      <item itemvalue="JUnit.ShopDaoTest.testQueryByShopId" />
       <item itemvalue="JUnit.ShopDaoTest" />
       <item itemvalue="JUnit.ShopServiceTest.testModifyShop" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.57" />
       <item itemvalue="JUnit.ShopDaoTest.testQueryShopList" />
+      <item itemvalue="JUnit.ShopDaoTest.testQueryShopListAndCount" />
+      <item itemvalue="JUnit.ShopServiceTest.testGetShopList" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ShopServiceTest.testGetShopList" />
+        <item itemvalue="JUnit.ShopDaoTest.testQueryShopListAndCount" />
         <item itemvalue="JUnit.ShopDaoTest.testQueryShopList" />
         <item itemvalue="JUnit.ShopServiceTest.testModifyShop" />
         <item itemvalue="JUnit.ShopDaoTest" />
-        <item itemvalue="JUnit.ShopDaoTest.testQueryByShopId" />
-        <item itemvalue="JUnit.ShopCategoryDaoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -288,6 +295,11 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -312,7 +324,7 @@
       <workItem from="1597986555547" duration="34079000" />
       <workItem from="1598244867838" duration="5057000" />
       <workItem from="1598320624993" duration="6768000" />
-      <workItem from="1598419693119" duration="2955000" />
+      <workItem from="1598419693119" duration="7673000" />
     </task>
     <servers />
   </component>
@@ -330,11 +342,11 @@
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1597898686984" />
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/3.-1080.1920.1050@0.0.1536.834" timestamp="1598320573128" />
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598163162765" />
-    <state x="574" y="127" key="#com.intellij.ide.util.MemberChooser" timestamp="1598083548214">
+    <state x="574" y="127" key="#com.intellij.ide.util.MemberChooser" timestamp="1598451088398">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="574" y="127" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1597938415425" />
-    <state x="574" y="127" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598083548214" />
+    <state x="574" y="127" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598451088398" />
     <state x="548" y="276" width="584" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1597908923850">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -343,107 +355,108 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="562" y="113" key="FileChooserDialogImpl/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1597981543989" />
-    <state width="1493" height="300" key="GridCell.Tab.0.bottom" timestamp="1598422768661">
+    <state width="1252" height="233" key="GridCell.Tab.0.bottom" timestamp="1598452920063">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1252" height="286" key="GridCell.Tab.0.bottom/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1597994613950" />
     <state width="1252" height="233" key="GridCell.Tab.0.bottom/0.0.1536.834/3.-1080.1920.1050@0.0.1536.834" timestamp="1598411149108" />
-    <state width="1493" height="300" key="GridCell.Tab.0.bottom/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598422768661" />
-    <state width="1493" height="300" key="GridCell.Tab.0.center" timestamp="1598422768661">
+    <state width="1252" height="233" key="GridCell.Tab.0.bottom/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598452920063" />
+    <state width="1252" height="233" key="GridCell.Tab.0.center" timestamp="1598452920063">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1252" height="286" key="GridCell.Tab.0.center/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1597994613950" />
     <state width="1252" height="233" key="GridCell.Tab.0.center/0.0.1536.834/3.-1080.1920.1050@0.0.1536.834" timestamp="1598411149108" />
-    <state width="1493" height="300" key="GridCell.Tab.0.center/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598422768661" />
-    <state width="1493" height="300" key="GridCell.Tab.0.left" timestamp="1598422768661">
+    <state width="1252" height="233" key="GridCell.Tab.0.center/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598452920063" />
+    <state width="1252" height="233" key="GridCell.Tab.0.left" timestamp="1598452920063">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1252" height="286" key="GridCell.Tab.0.left/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1597994613950" />
     <state width="1252" height="233" key="GridCell.Tab.0.left/0.0.1536.834/3.-1080.1920.1050@0.0.1536.834" timestamp="1598411149107" />
-    <state width="1493" height="300" key="GridCell.Tab.0.left/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598422768661" />
-    <state width="1493" height="300" key="GridCell.Tab.0.right" timestamp="1598422768661">
+    <state width="1252" height="233" key="GridCell.Tab.0.left/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598452920063" />
+    <state width="1252" height="233" key="GridCell.Tab.0.right" timestamp="1598452920063">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1252" height="286" key="GridCell.Tab.0.right/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1597994613950" />
     <state width="1252" height="233" key="GridCell.Tab.0.right/0.0.1536.834/3.-1080.1920.1050@0.0.1536.834" timestamp="1598411149108" />
-    <state width="1493" height="300" key="GridCell.Tab.0.right/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598422768661" />
-    <state width="1252" height="233" key="GridCell.Tab.1.bottom" timestamp="1598411148965">
+    <state width="1252" height="233" key="GridCell.Tab.0.right/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598452920063" />
+    <state width="1252" height="233" key="GridCell.Tab.1.bottom" timestamp="1598452919941">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1252" height="286" key="GridCell.Tab.1.bottom/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1597994613861" />
     <state width="1252" height="233" key="GridCell.Tab.1.bottom/0.0.1536.834/3.-1080.1920.1050@0.0.1536.834" timestamp="1598411148965" />
-    <state width="1252" height="289" key="GridCell.Tab.1.bottom/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598196905412" />
-    <state width="1252" height="233" key="GridCell.Tab.1.center" timestamp="1598411148964">
+    <state width="1252" height="233" key="GridCell.Tab.1.bottom/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598452919941" />
+    <state width="1252" height="233" key="GridCell.Tab.1.center" timestamp="1598452919941">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1252" height="286" key="GridCell.Tab.1.center/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1597994613860" />
     <state width="1252" height="233" key="GridCell.Tab.1.center/0.0.1536.834/3.-1080.1920.1050@0.0.1536.834" timestamp="1598411148964" />
-    <state width="1252" height="289" key="GridCell.Tab.1.center/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598196905411" />
-    <state width="1252" height="233" key="GridCell.Tab.1.left" timestamp="1598411148964">
+    <state width="1252" height="233" key="GridCell.Tab.1.center/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598452919941" />
+    <state width="1252" height="233" key="GridCell.Tab.1.left" timestamp="1598452919941">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1252" height="286" key="GridCell.Tab.1.left/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1597994613860" />
     <state width="1252" height="233" key="GridCell.Tab.1.left/0.0.1536.834/3.-1080.1920.1050@0.0.1536.834" timestamp="1598411148964" />
-    <state width="1252" height="289" key="GridCell.Tab.1.left/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598196905411" />
-    <state width="1252" height="233" key="GridCell.Tab.1.right" timestamp="1598411148965">
+    <state width="1252" height="233" key="GridCell.Tab.1.left/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598452919941" />
+    <state width="1252" height="233" key="GridCell.Tab.1.right" timestamp="1598452919941">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1252" height="286" key="GridCell.Tab.1.right/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1597994613860" />
     <state width="1252" height="233" key="GridCell.Tab.1.right/0.0.1536.834/3.-1080.1920.1050@0.0.1536.834" timestamp="1598411148965" />
-    <state width="1252" height="289" key="GridCell.Tab.1.right/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598196905412" />
-    <state width="1252" height="233" key="GridCell.Tab.2.bottom" timestamp="1598411148965">
+    <state width="1252" height="233" key="GridCell.Tab.1.right/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598452919941" />
+    <state width="1252" height="233" key="GridCell.Tab.2.bottom" timestamp="1598452919941">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1252" height="286" key="GridCell.Tab.2.bottom/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1597994613861" />
     <state width="1252" height="233" key="GridCell.Tab.2.bottom/0.0.1536.834/3.-1080.1920.1050@0.0.1536.834" timestamp="1598411148965" />
-    <state width="1252" height="289" key="GridCell.Tab.2.bottom/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598196905412" />
-    <state width="1252" height="233" key="GridCell.Tab.2.center" timestamp="1598411148965">
+    <state width="1252" height="233" key="GridCell.Tab.2.bottom/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598452919941" />
+    <state width="1252" height="233" key="GridCell.Tab.2.center" timestamp="1598452919941">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1252" height="286" key="GridCell.Tab.2.center/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1597994613861" />
     <state width="1252" height="233" key="GridCell.Tab.2.center/0.0.1536.834/3.-1080.1920.1050@0.0.1536.834" timestamp="1598411148965" />
-    <state width="1252" height="289" key="GridCell.Tab.2.center/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598196905412" />
-    <state width="1252" height="233" key="GridCell.Tab.2.left" timestamp="1598411148965">
+    <state width="1252" height="233" key="GridCell.Tab.2.center/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598452919941" />
+    <state width="1252" height="233" key="GridCell.Tab.2.left" timestamp="1598452919941">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1252" height="286" key="GridCell.Tab.2.left/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1597994613861" />
     <state width="1252" height="233" key="GridCell.Tab.2.left/0.0.1536.834/3.-1080.1920.1050@0.0.1536.834" timestamp="1598411148965" />
-    <state width="1252" height="289" key="GridCell.Tab.2.left/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598196905412" />
-    <state width="1252" height="233" key="GridCell.Tab.2.right" timestamp="1598411148965">
+    <state width="1252" height="233" key="GridCell.Tab.2.left/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598452919941" />
+    <state width="1252" height="233" key="GridCell.Tab.2.right" timestamp="1598452919941">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1252" height="286" key="GridCell.Tab.2.right/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1597994613861" />
     <state width="1252" height="233" key="GridCell.Tab.2.right/0.0.1536.834/3.-1080.1920.1050@0.0.1536.834" timestamp="1598411148965" />
-    <state width="1252" height="289" key="GridCell.Tab.2.right/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598196905412" />
-    <state width="1252" height="233" key="GridCell.Tab.3.bottom" timestamp="1598411148965">
+    <state width="1252" height="233" key="GridCell.Tab.2.right/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598452919941" />
+    <state width="1252" height="233" key="GridCell.Tab.3.bottom" timestamp="1598452919942">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1024" height="249" key="GridCell.Tab.3.bottom/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1597911123400" />
     <state width="1252" height="233" key="GridCell.Tab.3.bottom/0.0.1536.834/3.-1080.1920.1050@0.0.1536.834" timestamp="1598411148965" />
-    <state width="1252" height="289" key="GridCell.Tab.3.bottom/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598190962121" />
-    <state width="1252" height="233" key="GridCell.Tab.3.center" timestamp="1598411148965">
+    <state width="1252" height="233" key="GridCell.Tab.3.bottom/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598452919942" />
+    <state width="1252" height="233" key="GridCell.Tab.3.center" timestamp="1598452919941">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1024" height="249" key="GridCell.Tab.3.center/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1597911123400" />
     <state width="1252" height="233" key="GridCell.Tab.3.center/0.0.1536.834/3.-1080.1920.1050@0.0.1536.834" timestamp="1598411148965" />
-    <state width="1252" height="289" key="GridCell.Tab.3.center/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598190962121" />
-    <state width="1252" height="233" key="GridCell.Tab.3.left" timestamp="1598411148965">
+    <state width="1252" height="233" key="GridCell.Tab.3.center/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598452919941" />
+    <state width="1252" height="233" key="GridCell.Tab.3.left" timestamp="1598452919941">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1024" height="249" key="GridCell.Tab.3.left/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1597911123400" />
     <state width="1252" height="233" key="GridCell.Tab.3.left/0.0.1536.834/3.-1080.1920.1050@0.0.1536.834" timestamp="1598411148965" />
-    <state width="1252" height="289" key="GridCell.Tab.3.left/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598190962120" />
-    <state width="1252" height="233" key="GridCell.Tab.3.right" timestamp="1598411148965">
+    <state width="1252" height="233" key="GridCell.Tab.3.left/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598452919941" />
+    <state width="1252" height="233" key="GridCell.Tab.3.right" timestamp="1598452919942">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1024" height="249" key="GridCell.Tab.3.right/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1597911123400" />
     <state width="1252" height="233" key="GridCell.Tab.3.right/0.0.1536.834/3.-1080.1920.1050@0.0.1536.834" timestamp="1598411148965" />
-    <state width="1252" height="289" key="GridCell.Tab.3.right/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598190962121" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1598407086935">
+    <state width="1252" height="233" key="GridCell.Tab.3.right/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598452919942" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1598452161042">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.834/0.-1080.1920.1050@0.0.1536.834" timestamp="1597981552052" />
     <state x="249" y="0" key="SettingsEditor/0.0.1536.834/3.-1080.1920.1050@0.0.1536.834" timestamp="1598407086935" />
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.834/6.-1080.1920.1050@0.0.1536.834" timestamp="1598452161042" />
     <state x="449" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1598420101386">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -473,7 +486,7 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/shopadmin/ShopManagementController.java</url>
           <line>47</line>
-          <option name="timeStamp" value="11" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

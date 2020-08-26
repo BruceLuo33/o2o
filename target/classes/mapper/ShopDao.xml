@@ -51,8 +51,9 @@
         tb_area a,
         tb_shop_category sc
         <where>
-            <if test="shopCondition.shopCategory != null and shopCondition.shopCategory.shopCategoryId != null">
-                and shop_category_id = #{shopCondition.shopCategory.shopCategoryId}
+            <if test="shopCondition.shopCategory != null and
+            shopCondition.shopCategory.shopCategoryId != null">
+                and s.shop_category_id = #{shopCondition.shopCategory.shopCategoryId}
             </if>
             <if test="shopCondition.area != null and shopCondition.area.areaId != null">
                 and s.area_id = #{shopCondition.area.areaId}
@@ -64,7 +65,7 @@
                 and s.enable_status = #{shopCondition.enableStatus}
             </if>
             <if test="shopCondition.owner != null and shopCondition.owner.userId != null">
-                and s.user_id = shopCondition.owner.userId
+                and s.owner_id = #{shopCondition.owner.userId}
             </if>
             AND
             s.area_id = a.area_id
@@ -72,8 +73,8 @@
             s.shop_category_id = sc.shop_category_id
         </where>
         ORDER BY
-        priority DESC
-        LIMIT @{rowIndex}, #{pageSize};
+        s.priority DESC
+        LIMIT #{rowIndex}, #{pageSize};
     </select>
 
     <select id="queryShopCount" resultType="int">
@@ -85,7 +86,7 @@
         tb_shop_category sc
         <where>
             <if test="shopCondition.shopCategory != null and shopCondition.shopCategory.shopCategoryId != null">
-                and shop_category_id = #{shopCondition.shopCategory.shopCategoryId}
+                and s.shop_category_id = #{shopCondition.shopCategory.shopCategoryId}
             </if>
             <if test="shopCondition.area != null and shopCondition.area.areaId != null">
                 and s.area_id = #{shopCondition.area.areaId}
