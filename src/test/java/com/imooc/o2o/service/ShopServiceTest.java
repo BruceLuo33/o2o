@@ -1,6 +1,7 @@
 package com.imooc.o2o.service;
 
 import com.imooc.o2o.BaseTest;
+import com.imooc.o2o.dto.ImageHolder;
 import com.imooc.o2o.dto.ShopExecution;
 import com.imooc.o2o.entity.Area;
 import com.imooc.o2o.entity.PersonInfo;
@@ -45,7 +46,8 @@ public class ShopServiceTest extends BaseTest {
         shop.setShopName("修改后的店铺名称2");
         File shopImg = new File("C:\\Users\\luoyi\\Desktop\\robin.jpg");
         InputStream is = new FileInputStream(shopImg);
-        ShopExecution shopExecution = shopService.modifyShop(shop, is, "robin.jpg");
+        ImageHolder imageHolder = new ImageHolder("robin.jpg", is);
+        ShopExecution shopExecution = shopService.modifyShop(shop, imageHolder);
         System.out.println("新的图片地址为： " + shopExecution.getShop().getShopImg());
     }
 
@@ -71,7 +73,8 @@ public class ShopServiceTest extends BaseTest {
         shop.setAdvice("审核中");
         File shopImg = new File("C:\\Users\\luoyi\\Desktop\\robin.jpg");
         InputStream is = new FileInputStream(shopImg);
-        ShopExecution se = shopService.addShop(shop, is, shopImg.getName());
+        ImageHolder imageHolder = new ImageHolder("robin.jpg", is);
+        ShopExecution se = shopService.addShop(shop, imageHolder);
         assertEquals(ShopStateEnum.CHECK.getState(), se.getState());
     }
 }

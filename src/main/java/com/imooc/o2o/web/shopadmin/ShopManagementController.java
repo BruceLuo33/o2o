@@ -177,8 +177,8 @@ public class ShopManagementController {
 //            File shopImgFile = new File(PathUtil.getImgBasePath() + ImageUtil.getRandomFileName());
             ShopExecution se = null;
             try {
-//                ImageHolder imageHolder = new ImageHolder(shopImg.getOriginalFilename(), shopImg.getInputStream());
-                se = shopService.addShop(shop, shopImg.getInputStream(), shopImg.getOriginalFilename());
+                ImageHolder imageHolder = new ImageHolder(shopImg.getOriginalFilename(), shopImg.getInputStream());
+                se = shopService.addShop(shop, imageHolder);
                 if (se.getState() == ShopStateEnum.CHECK.getState()) {
                     modelMap.put("success", true);
                     // 该用户可以操作的店铺列表
@@ -243,9 +243,10 @@ public class ShopManagementController {
             ShopExecution se;
             try {
                 if (shopImg == null) {
-                    se = shopService.modifyShop(shop, null, null);
+                    se = shopService.modifyShop(shop, null);
                 } else {
-                    se = shopService.modifyShop(shop, shopImg.getInputStream(), shopImg.getOriginalFilename());
+                    ImageHolder imageHolder = new ImageHolder(shopImg.getOriginalFilename(), shopImg.getInputStream());
+                    se = shopService.modifyShop(shop, imageHolder);
                 }
                 if (se.getState() == ShopStateEnum.SUCCESS.getState()) {
                     modelMap.put("success", true);
