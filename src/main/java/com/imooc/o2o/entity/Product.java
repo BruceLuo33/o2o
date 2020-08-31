@@ -7,7 +7,7 @@ public class Product {
     private Long productId;
     private String productName;
     private String productDesc;
-    private String imdAdd;
+    private String imgAdd;
     private String normalPrice;
     private String promotionPrice;
     private Integer priority;
@@ -44,12 +44,12 @@ public class Product {
         this.productDesc = productDesc;
     }
 
-    public String getImdAdd() {
-        return imdAdd;
+    public String getImgAdd() {
+        return imgAdd;
     }
 
-    public void setImdAdd(String imdAdd) {
-        this.imdAdd = imdAdd;
+    public void setImgAdd(String imgAdd) {
+        this.imgAdd = imgAdd;
     }
 
     public String getNormalPrice() {

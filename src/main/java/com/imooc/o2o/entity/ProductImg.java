@@ -4,8 +4,8 @@ import java.util.Date;
 
 public class ProductImg {
     private Long productImgId;
-    private String imdAdd;
-    private String imgDes;
+    private String imgAdd;
+    private String imgDesc;
     private Integer priority;
     private Date createTime;
     private Long productId;
@@ -18,20 +18,20 @@ public class ProductImg {
         this.productImgId = productImgId;
     }
 
-    public String getImdAdd() {
-        return imdAdd;
+    public String getImgAdd() {
+        return imgAdd;
     }
 
-    public void setImdAdd(String imdAdd) {
-        this.imdAdd = imdAdd;
+    public void setImgAdd(String imgAdd) {
+        this.imgAdd = imgAdd;
     }
 
-    public String getImgDes() {
-        return imgDes;
+    public String getImgDesc() {
+        return imgDesc;
     }
 
-    public void setImgDes(String imgDes) {
-        this.imgDes = imgDes;
+    public void setImgDesc(String imgDesc) {
+        this.imgDesc = imgDesc;
     }
 
     public Integer getPriority() {
