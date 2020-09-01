@@ -223,6 +223,7 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1598859824381" />
+<<<<<<< Updated upstream
     <state width="1877" height="368" key="GridCell.Tab.0.bottom" timestamp="1598944622863">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -243,6 +244,24 @@
     </state>
     <state width="1024" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1598944328851" />
     <state width="1877" height="368" key="GridCell.Tab.0.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1598944622863" />
+=======
+    <state width="1024" height="213" key="GridCell.Tab.0.bottom" timestamp="1598944328851">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1024" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1598944328851" />
+    <state width="1024" height="213" key="GridCell.Tab.0.center" timestamp="1598944328851">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1024" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1598944328851" />
+    <state width="1024" height="213" key="GridCell.Tab.0.left" timestamp="1598944328851">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1024" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1598944328851" />
+    <state width="1024" height="213" key="GridCell.Tab.0.right" timestamp="1598944328851">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1024" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1598944328851" />
+>>>>>>> Stashed changes
     <state width="1024" height="213" key="GridCell.Tab.1.bottom" timestamp="1598944328852">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -303,11 +322,18 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="93" y="93" width="1350" height="648" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.834@0.0.1536.834" timestamp="1598866486556" />
+<<<<<<< Updated upstream
     <state x="561" y="303" key="com.intellij.ide.util.TipDialog" timestamp="1598944593476">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="449" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1598943906990" />
     <state x="561" y="303" key="com.intellij.ide.util.TipDialog/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1598944593476" />
+=======
+    <state x="449" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1598944861450">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="449" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1598944861450" />
+>>>>>>> Stashed changes
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
