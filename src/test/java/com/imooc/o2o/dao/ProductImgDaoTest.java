@@ -23,6 +23,7 @@ import static org.junit.Assert.assertEquals;
 public class ProductImgDaoTest extends BaseTest {
     @Autowired
     private ProductImgDao productImgDao;
+    // test
 
     @Test
     public void testABatchInsertProductImg() throws Exception {

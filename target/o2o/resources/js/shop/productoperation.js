@@ -145,7 +145,7 @@ $(function() {
                 },
                 error: function (xhr, textStatus, errorThrown) {
                     /**
-                     * 错误信息处理
+                     * 错误信息处理，获取错误信息
                      */
                     alert("进入error---");
                     alert("状态码" + xhr.status);
