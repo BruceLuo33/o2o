@@ -33,6 +33,11 @@ public class ProductServiceImpl implements ProductService {
     private ProductImgDao productImgDao;
 
     @Override
+    public Product getProductById(long productId) {
+        return productDao.queryProductById(productId);
+    }
+
+    @Override
     @Transactional
     // 1. 处理缩略图，获取缩略图对应路径并赋值给 product
     // 2. 往 tb_product 写入商品信息，获取 productId
@@ -68,6 +73,36 @@ public class ProductServiceImpl implements ProductService {
             return new ProductExecution(ProductStateEnum.EMPTY);
         }
     }
+
+    @Override
+    @Transactional
+    // 1. 若缩略图参数有值，则处理缩略图；若原先存在缩略图，则先删除再添加新图，之后获取缩略图相对路径并赋值给 product
+    // 2. 若商品详情图列表参数有值，对商品详情图列表进行同样的操作
+    // 3. 将 tb_product_img 下面的该商品原先的商品详情图全部清除
+    // 4. 更新 tb_product 的信息
+    public ProductExecution modifyProdyct(Product product, ImageHolder thumbnail, List<ImageHolder> productImgHolderList) throws ProductOperationException {
+        // 空值判断
+        if (product != null && product.getShop() != null && product.getShop().getShopId() != null) {
+            // 给商品设置上默认属性
+            product.setLastEditTime(new Date());
+            // 若商品缩略图不为空且原有缩略图不为空，则删除原有缩略图并添加
+            if (thumbnail != null) {
+                // 先获取一遍原有信息，因为原来的信息中有原图片地址
+                Product tempProduct = productDao.queryProductById(product.getProductId());
+                if (tempProduct.getImgAdd() != null) {
+                    ImageUtil.deleteFileOrPath(tempProduct.getImgAdd());
+                }
+                addThumbnail(product, thumbnail);
+            }
+            // 如果有新存入的商品详情图，则将原来的删除，并添加新的图片
+            if (productImgHolderList != null && productImgHolderList.size() > 0) {
+                deleteProductImgList(product.getProductId());
+            }
+        }
+
+        return null;
+    }
+
     /**
      * 添加缩略图
      *
