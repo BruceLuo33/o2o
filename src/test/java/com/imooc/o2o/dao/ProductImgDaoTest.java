@@ -3,6 +3,7 @@ package com.imooc.o2o.dao;
 import com.imooc.o2o.BaseTest;
 import com.imooc.o2o.entity.ProductImg;
 import org.junit.FixMethodOrder;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +24,6 @@ import static org.junit.Assert.assertEquals;
 public class ProductImgDaoTest extends BaseTest {
     @Autowired
     private ProductImgDao productImgDao;
-    // test
 
     @Test
     public void testABatchInsertProductImg() throws Exception {
@@ -48,6 +48,12 @@ public class ProductImgDaoTest extends BaseTest {
         assertEquals(2, effectedNum);
     }
 
-//    @Test
-//    public void testBQueryByProductImgList
+    @Test
+//    @Ignore
+    public void testCDeleteProductImgByProductId() throws Exception {
+        // 删除新增的两条商品详情图片记录
+        long productId = 1;
+        int effectedNum = productImgDao.deleteProductImgByProductId(productId);
+        assertEquals(2, effectedNum);
+    }
 }

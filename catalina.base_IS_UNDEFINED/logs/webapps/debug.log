@@ -1,3 +1,194 @@
-2020-09-01 15:16:51.186 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==>  Preparing: INSERT INTO tb_product_img(img_add, img_desc, priority, create_time, product_id) VALUES ( ?, ?, ?, ?, ? ) , ( ?, ?, ?, ?, ? ) 
-2020-09-01 15:16:51.226 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==> Parameters: å›¾ç‰‡1(String), æµ‹è¯•å›¾ç‰‡1(String), 1(Integer), 2020-09-01 15:16:50.62(Timestamp), 1(Long), å›¾ç‰‡2(String), null, 1(Integer), 2020-09-01 15:16:50.62(Timestamp), 1(Long)
-2020-09-01 15:16:51.333 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - <==    Updates: 2
+2020-09-02 10:44:10.822 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC 
+2020-09-02 10:44:10.855 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2020-09-02 10:44:10.880 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - <==      Total: 2
+2020-09-02 10:44:10.909 [main] DEBUG c.i.o.d.P.batchInsertProductCategory - ==>  Preparing: INSERT INTO tb_product_category(product_category_name, priority, create_time, shop_id) VALUES ( ?, ?, ?, ? ) , ( ?, ?, ?, ? ) 
+2020-09-02 10:44:10.911 [main] DEBUG c.i.o.d.P.batchInsertProductCategory - ==> Parameters: ÉÌÆ·Àà±ð1(String), 1(Integer), 2020-09-02 10:44:10.889(Timestamp), 1(Long), ÉÌÆ·Àà±ð2(String), 2(Integer), 2020-09-02 10:44:10.889(Timestamp), 1(Long)
+2020-09-02 10:44:10.937 [main] DEBUG c.i.o.d.P.batchInsertProductCategory - <==    Updates: 2
+2020-09-02 10:44:10.939 [main] DEBUG c.i.o.d.P.queryProductCategoryList - ==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? ORDER BY priority DESC 
+2020-09-02 10:44:10.939 [main] DEBUG c.i.o.d.P.queryProductCategoryList - ==> Parameters: 1(Long)
+2020-09-02 10:44:10.941 [main] DEBUG c.i.o.d.P.queryProductCategoryList - <==      Total: 7
+2020-09-02 10:44:10.942 [main] DEBUG c.i.o.d.P.queryProductCategoryList - ==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? ORDER BY priority DESC 
+2020-09-02 10:44:10.943 [main] DEBUG c.i.o.d.P.queryProductCategoryList - ==> Parameters: 1(Long)
+2020-09-02 10:44:10.945 [main] DEBUG c.i.o.d.P.queryProductCategoryList - <==      Total: 7
+2020-09-02 10:44:10.946 [main] DEBUG c.i.o.dao.ProductCategoryDao.deleteProductCategory - ==>  Preparing: DELETE FROM tb_product_category WHERE product_category_id = ? AND shop_id = ? 
+2020-09-02 10:44:10.946 [main] DEBUG c.i.o.dao.ProductCategoryDao.deleteProductCategory - ==> Parameters: 17(Long), 1(Long)
+2020-09-02 10:44:10.950 [main] DEBUG c.i.o.dao.ProductCategoryDao.deleteProductCategory - <==    Updates: 1
+2020-09-02 10:44:10.950 [main] DEBUG c.i.o.dao.ProductCategoryDao.deleteProductCategory - ==>  Preparing: DELETE FROM tb_product_category WHERE product_category_id = ? AND shop_id = ? 
+2020-09-02 10:44:10.950 [main] DEBUG c.i.o.dao.ProductCategoryDao.deleteProductCategory - ==> Parameters: 16(Long), 1(Long)
+2020-09-02 10:44:10.954 [main] DEBUG c.i.o.dao.ProductCategoryDao.deleteProductCategory - <==    Updates: 1
+2020-09-02 10:44:10.957 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name, product_desc, img_add, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-09-02 10:44:10.958 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: ²âÊÔ1(String), ²âÊÔDesc1(String), test1(String), null, null, 1(Integer), 2020-09-02 10:44:10.957(Timestamp), 2020-09-02 10:44:10.957(Timestamp), 1(Integer), 1(Long), 1(Long)
+2020-09-02 10:44:10.963 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2020-09-02 10:44:10.966 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name, product_desc, img_add, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-09-02 10:44:10.966 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: ²âÊÔ2(String), ²âÊÔDesc2(String), test2(String), null, null, 2(Integer), 2020-09-02 10:44:10.957(Timestamp), 2020-09-02 10:44:10.957(Timestamp), 0(Integer), 1(Long), 1(Long)
+2020-09-02 10:44:10.970 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2020-09-02 10:44:10.970 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name, product_desc, img_add, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-09-02 10:44:10.971 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: test3(String), ²âÊÔDesc3(String), test3(String), null, null, 3(Integer), 2020-09-02 10:44:10.957(Timestamp), 2020-09-02 10:44:10.957(Timestamp), 1(Integer), 1(Long), 1(Long)
+2020-09-02 10:44:10.974 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2020-09-02 10:44:10.978 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==>  Preparing: INSERT INTO tb_product_img(img_add, img_desc, priority, create_time, product_id) VALUES ( ?, ?, ?, ?, ? ) , ( ?, ?, ?, ?, ? ) 
+2020-09-02 10:44:10.979 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==> Parameters: Í¼Æ¬1(String), ²âÊÔÍ¼Æ¬1(String), 1(Integer), 2020-09-02 10:44:10.977(Timestamp), 1(Long), Í¼Æ¬2(String), null, 1(Integer), 2020-09-02 10:44:10.977(Timestamp), 1(Long)
+2020-09-02 10:44:10.984 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - <==    Updates: 2
+2020-09-02 10:44:10.992 [main] DEBUG c.imooc.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id is not null ORDER BY priority DESC 
+2020-09-02 10:44:10.993 [main] DEBUG c.imooc.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2020-09-02 10:44:10.994 [main] DEBUG c.imooc.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 1
+2020-09-02 10:44:11.004 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_add, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id = ? AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?, ?; 
+2020-09-02 10:44:11.004 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 1(Integer), 5(Integer)
+2020-09-02 10:44:11.007 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - <==      Total: 5
+2020-09-02 10:44:11.008 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id = ? AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id 
+2020-09-02 10:44:11.008 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2020-09-02 10:44:11.010 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2020-09-02 10:44:11.011 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_add, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id = ? and s.owner_id = ? AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?, ?; 
+2020-09-02 10:44:11.011 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==> Parameters: 3(Long), 1(Long), 1(Integer), 2(Integer)
+2020-09-02 10:44:11.014 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - <==      Total: 2
+2020-09-02 10:44:11.015 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id = ? and s.owner_id = ? AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id 
+2020-09-02 10:44:11.015 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 3(Long), 1(Long)
+2020-09-02 10:44:11.016 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2020-09-02 10:44:11.018 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC 
+2020-09-02 10:44:11.019 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2020-09-02 10:44:11.020 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - <==      Total: 2
+2020-09-02 10:44:11.039 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAdd is: upload\item\shop\1\2020090210441196443.jpg
+2020-09-02 10:44:11.040 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete add is: D:\JavaProject\image\upload\item\shop\1\2020090210441196443.jpg
+2020-09-02 10:44:11.040 [main] DEBUG com.imooc.o2o.util.ImageUtil - basepath is: /C:/Users/luoyi/IdeaProjects/o2o/target/test-classes/
+2020-09-02 10:44:11.172 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name, product_desc, img_add, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-09-02 10:44:11.174 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: ²âÊÔÉÌÆ·1(String), ²âÊÔÉÌÆ·1(String), upload\item\shop\1\2020090210441196443.jpg(String), null, null, 20(Integer), 2020-09-02 10:44:11.035(Timestamp), 2020-09-02 10:44:11.035(Timestamp), 1(Integer), 1(Long), 1(Long)
+2020-09-02 10:44:11.175 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2020-09-02 10:44:11.175 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAdd is :upload\item\shop\1\2020090210441134509.jpg
+2020-09-02 10:44:11.175 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete add is :D:\JavaProject\image\upload\item\shop\1\2020090210441134509.jpg
+2020-09-02 10:44:11.231 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAdd is :upload\item\shop\1\2020090210441137153.jpg
+2020-09-02 10:44:11.231 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete add is :D:\JavaProject\image\upload\item\shop\1\2020090210441137153.jpg
+2020-09-02 10:44:11.323 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==>  Preparing: INSERT INTO tb_product_img(img_add, img_desc, priority, create_time, product_id) VALUES ( ?, ?, ?, ?, ? ) , ( ?, ?, ?, ?, ? ) 
+2020-09-02 10:44:11.324 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==> Parameters: upload\item\shop\1\2020090210441134509.jpg(String), null, null, 2020-09-02 10:44:11.231(Timestamp), 9(Long), upload\item\shop\1\2020090210441137153.jpg(String), null, null, 2020-09-02 10:44:11.322(Timestamp), 9(Long)
+2020-09-02 10:44:11.325 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - <==    Updates: 2
+2020-09-02 10:44:11.333 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_add, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id = ? AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?, ?; 
+2020-09-02 10:44:11.333 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==> Parameters: 3(Long), 1(Integer), 1(Integer)
+2020-09-02 10:44:11.335 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - <==      Total: 1
+2020-09-02 10:44:11.336 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id = ? AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id 
+2020-09-02 10:44:11.336 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 3(Long)
+2020-09-02 10:44:11.337 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2020-09-02 10:44:41.675 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC 
+2020-09-02 10:44:41.704 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2020-09-02 10:44:41.725 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - <==      Total: 2
+2020-09-02 10:44:41.755 [main] DEBUG c.i.o.d.P.batchInsertProductCategory - ==>  Preparing: INSERT INTO tb_product_category(product_category_name, priority, create_time, shop_id) VALUES ( ?, ?, ?, ? ) , ( ?, ?, ?, ? ) 
+2020-09-02 10:44:41.757 [main] DEBUG c.i.o.d.P.batchInsertProductCategory - ==> Parameters: ÉÌÆ·Àà±ð1(String), 1(Integer), 2020-09-02 10:44:41.735(Timestamp), 1(Long), ÉÌÆ·Àà±ð2(String), 2(Integer), 2020-09-02 10:44:41.735(Timestamp), 1(Long)
+2020-09-02 10:44:41.794 [main] DEBUG c.i.o.d.P.batchInsertProductCategory - <==    Updates: 2
+2020-09-02 10:44:41.796 [main] DEBUG c.i.o.d.P.queryProductCategoryList - ==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? ORDER BY priority DESC 
+2020-09-02 10:44:41.796 [main] DEBUG c.i.o.d.P.queryProductCategoryList - ==> Parameters: 1(Long)
+2020-09-02 10:44:41.798 [main] DEBUG c.i.o.d.P.queryProductCategoryList - <==      Total: 7
+2020-09-02 10:44:41.799 [main] DEBUG c.i.o.d.P.queryProductCategoryList - ==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? ORDER BY priority DESC 
+2020-09-02 10:44:41.800 [main] DEBUG c.i.o.d.P.queryProductCategoryList - ==> Parameters: 1(Long)
+2020-09-02 10:44:41.802 [main] DEBUG c.i.o.d.P.queryProductCategoryList - <==      Total: 7
+2020-09-02 10:44:41.803 [main] DEBUG c.i.o.dao.ProductCategoryDao.deleteProductCategory - ==>  Preparing: DELETE FROM tb_product_category WHERE product_category_id = ? AND shop_id = ? 
+2020-09-02 10:44:41.804 [main] DEBUG c.i.o.dao.ProductCategoryDao.deleteProductCategory - ==> Parameters: 19(Long), 1(Long)
+2020-09-02 10:44:41.807 [main] DEBUG c.i.o.dao.ProductCategoryDao.deleteProductCategory - <==    Updates: 1
+2020-09-02 10:44:41.807 [main] DEBUG c.i.o.dao.ProductCategoryDao.deleteProductCategory - ==>  Preparing: DELETE FROM tb_product_category WHERE product_category_id = ? AND shop_id = ? 
+2020-09-02 10:44:41.807 [main] DEBUG c.i.o.dao.ProductCategoryDao.deleteProductCategory - ==> Parameters: 18(Long), 1(Long)
+2020-09-02 10:44:41.810 [main] DEBUG c.i.o.dao.ProductCategoryDao.deleteProductCategory - <==    Updates: 1
+2020-09-02 10:44:41.814 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name, product_desc, img_add, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-09-02 10:44:41.815 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: ²âÊÔ1(String), ²âÊÔDesc1(String), test1(String), null, null, 1(Integer), 2020-09-02 10:44:41.813(Timestamp), 2020-09-02 10:44:41.813(Timestamp), 1(Integer), 1(Long), 1(Long)
+2020-09-02 10:44:41.819 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2020-09-02 10:44:41.821 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name, product_desc, img_add, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-09-02 10:44:41.822 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: ²âÊÔ2(String), ²âÊÔDesc2(String), test2(String), null, null, 2(Integer), 2020-09-02 10:44:41.813(Timestamp), 2020-09-02 10:44:41.813(Timestamp), 0(Integer), 1(Long), 1(Long)
+2020-09-02 10:44:41.825 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2020-09-02 10:44:41.826 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name, product_desc, img_add, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-09-02 10:44:41.827 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: test3(String), ²âÊÔDesc3(String), test3(String), null, null, 3(Integer), 2020-09-02 10:44:41.813(Timestamp), 2020-09-02 10:44:41.813(Timestamp), 1(Integer), 1(Long), 1(Long)
+2020-09-02 10:44:41.830 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2020-09-02 10:44:41.834 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==>  Preparing: INSERT INTO tb_product_img(img_add, img_desc, priority, create_time, product_id) VALUES ( ?, ?, ?, ?, ? ) , ( ?, ?, ?, ?, ? ) 
+2020-09-02 10:44:41.835 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==> Parameters: Í¼Æ¬1(String), ²âÊÔÍ¼Æ¬1(String), 1(Integer), 2020-09-02 10:44:41.833(Timestamp), 1(Long), Í¼Æ¬2(String), null, 1(Integer), 2020-09-02 10:44:41.833(Timestamp), 1(Long)
+2020-09-02 10:44:41.839 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - <==    Updates: 2
+2020-09-02 10:44:41.847 [main] DEBUG c.imooc.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id is not null ORDER BY priority DESC 
+2020-09-02 10:44:41.847 [main] DEBUG c.imooc.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2020-09-02 10:44:41.849 [main] DEBUG c.imooc.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 1
+2020-09-02 10:44:41.857 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_add, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id = ? AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?, ?; 
+2020-09-02 10:44:41.858 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 1(Integer), 5(Integer)
+2020-09-02 10:44:41.861 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - <==      Total: 5
+2020-09-02 10:44:41.863 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id = ? AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id 
+2020-09-02 10:44:41.863 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2020-09-02 10:44:41.864 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2020-09-02 10:44:41.865 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_add, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id = ? and s.owner_id = ? AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?, ?; 
+2020-09-02 10:44:41.866 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==> Parameters: 3(Long), 1(Long), 1(Integer), 2(Integer)
+2020-09-02 10:44:41.868 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - <==      Total: 2
+2020-09-02 10:44:41.870 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id = ? and s.owner_id = ? AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id 
+2020-09-02 10:44:41.870 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 3(Long), 1(Long)
+2020-09-02 10:44:41.871 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2020-09-02 10:44:41.873 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC 
+2020-09-02 10:44:41.873 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2020-09-02 10:44:41.875 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - <==      Total: 2
+2020-09-02 10:44:41.892 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAdd is: upload\item\shop\1\2020090210444127104.jpg
+2020-09-02 10:44:41.892 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete add is: D:\JavaProject\image\upload\item\shop\1\2020090210444127104.jpg
+2020-09-02 10:44:41.892 [main] DEBUG com.imooc.o2o.util.ImageUtil - basepath is: /C:/Users/luoyi/IdeaProjects/o2o/target/test-classes/
+2020-09-02 10:44:42.018 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name, product_desc, img_add, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-09-02 10:44:42.019 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: ²âÊÔÉÌÆ·1(String), ²âÊÔÉÌÆ·1(String), upload\item\shop\1\2020090210444127104.jpg(String), null, null, 20(Integer), 2020-09-02 10:44:41.888(Timestamp), 2020-09-02 10:44:41.888(Timestamp), 1(Integer), 1(Long), 1(Long)
+2020-09-02 10:44:42.020 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2020-09-02 10:44:42.021 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAdd is :upload\item\shop\1\2020090210444241555.jpg
+2020-09-02 10:44:42.021 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete add is :D:\JavaProject\image\upload\item\shop\1\2020090210444241555.jpg
+2020-09-02 10:44:42.076 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAdd is :upload\item\shop\1\2020090210444247327.jpg
+2020-09-02 10:44:42.076 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete add is :D:\JavaProject\image\upload\item\shop\1\2020090210444247327.jpg
+2020-09-02 10:44:42.166 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==>  Preparing: INSERT INTO tb_product_img(img_add, img_desc, priority, create_time, product_id) VALUES ( ?, ?, ?, ?, ? ) , ( ?, ?, ?, ?, ? ) 
+2020-09-02 10:44:42.167 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==> Parameters: upload\item\shop\1\2020090210444241555.jpg(String), null, null, 2020-09-02 10:44:42.075(Timestamp), 13(Long), upload\item\shop\1\2020090210444247327.jpg(String), null, null, 2020-09-02 10:44:42.165(Timestamp), 13(Long)
+2020-09-02 10:44:42.168 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - <==    Updates: 2
+2020-09-02 10:44:42.176 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_add, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id = ? AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?, ?; 
+2020-09-02 10:44:42.177 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==> Parameters: 3(Long), 1(Integer), 1(Integer)
+2020-09-02 10:44:42.178 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - <==      Total: 1
+2020-09-02 10:44:42.179 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id = ? AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id 
+2020-09-02 10:44:42.179 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 3(Long)
+2020-09-02 10:44:42.180 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2020-09-02 16:34:07.139 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==>  Preparing: INSERT INTO tb_product_img(img_add, img_desc, priority, create_time, product_id) VALUES ( ?, ?, ?, ?, ? ) , ( ?, ?, ?, ?, ? ) 
+2020-09-02 16:34:07.171 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==> Parameters: å›¾ç‰‡1(String), æµ‹è¯•å›¾ç‰‡1(String), 1(Integer), 2020-09-02 16:34:06.635(Timestamp), 1(Long), å›¾ç‰‡2(String), null, 1(Integer), 2020-09-02 16:34:06.635(Timestamp), 1(Long)
+2020-09-02 16:34:07.238 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - <==    Updates: 2
+2020-09-02 16:34:07.242 [main] DEBUG c.i.o.d.ProductImgDao.deleteProductImgByProductId - ==>  Preparing: DELETE FROM tb_product_img WHERE product_id = ? 
+2020-09-02 16:34:07.242 [main] DEBUG c.i.o.d.ProductImgDao.deleteProductImgByProductId - ==> Parameters: 1(Long)
+2020-09-02 16:34:07.246 [main] DEBUG c.i.o.d.ProductImgDao.deleteProductImgByProductId - <==    Updates: 10
+2020-09-02 16:35:18.184 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==>  Preparing: INSERT INTO tb_product_img(img_add, img_desc, priority, create_time, product_id) VALUES ( ?, ?, ?, ?, ? ) , ( ?, ?, ?, ?, ? ) 
+2020-09-02 16:35:18.218 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==> Parameters: å›¾ç‰‡1(String), æµ‹è¯•å›¾ç‰‡1(String), 1(Integer), 2020-09-02 16:35:17.669(Timestamp), 1(Long), å›¾ç‰‡2(String), null, 1(Integer), 2020-09-02 16:35:17.669(Timestamp), 1(Long)
+2020-09-02 16:35:18.258 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - <==    Updates: 2
+2020-09-02 16:35:52.385 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==>  Preparing: INSERT INTO tb_product_img(img_add, img_desc, priority, create_time, product_id) VALUES ( ?, ?, ?, ?, ? ) , ( ?, ?, ?, ?, ? ) 
+2020-09-02 16:35:52.419 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==> Parameters: å›¾ç‰‡1(String), æµ‹è¯•å›¾ç‰‡1(String), 1(Integer), 2020-09-02 16:35:51.893(Timestamp), 1(Long), å›¾ç‰‡2(String), null, 1(Integer), 2020-09-02 16:35:51.893(Timestamp), 1(Long)
+2020-09-02 16:35:52.520 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - <==    Updates: 2
+2020-09-02 16:35:52.524 [main] DEBUG c.i.o.d.ProductImgDao.deleteProductImgByProductId - ==>  Preparing: DELETE FROM tb_product_img WHERE product_id = ? 
+2020-09-02 16:35:52.524 [main] DEBUG c.i.o.d.ProductImgDao.deleteProductImgByProductId - ==> Parameters: 1(Long)
+2020-09-02 16:35:52.528 [main] DEBUG c.i.o.d.ProductImgDao.deleteProductImgByProductId - <==    Updates: 4
+2020-09-02 16:36:49.369 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==>  Preparing: INSERT INTO tb_product_img(img_add, img_desc, priority, create_time, product_id) VALUES ( ?, ?, ?, ?, ? ) , ( ?, ?, ?, ?, ? ) 
+2020-09-02 16:36:49.399 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==> Parameters: å›¾ç‰‡1(String), æµ‹è¯•å›¾ç‰‡1(String), 1(Integer), 2020-09-02 16:36:48.878(Timestamp), 1(Long), å›¾ç‰‡2(String), null, 1(Integer), 2020-09-02 16:36:48.878(Timestamp), 1(Long)
+2020-09-02 16:36:49.467 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - <==    Updates: 2
+2020-09-02 16:36:49.471 [main] DEBUG c.i.o.d.ProductImgDao.deleteProductImgByProductId - ==>  Preparing: DELETE FROM tb_product_img WHERE product_id = ? 
+2020-09-02 16:36:49.471 [main] DEBUG c.i.o.d.ProductImgDao.deleteProductImgByProductId - ==> Parameters: 1(Long)
+2020-09-02 16:36:49.483 [main] DEBUG c.i.o.d.ProductImgDao.deleteProductImgByProductId - <==    Updates: 2
+2020-09-02 16:52:01.985 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name, product_desc, img_add, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-09-02 16:52:02.021 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: æµ‹è¯•1(String), æµ‹è¯•Desc1(String), test1(String), null, null, 1(Integer), 2020-09-02 16:52:01.512(Timestamp), 2020-09-02 16:52:01.512(Timestamp), 1(Integer), 1(Long), 1(Long)
+2020-09-02 16:52:02.084 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2020-09-02 16:52:02.100 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name, product_desc, img_add, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-09-02 16:52:02.100 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: æµ‹è¯•2(String), æµ‹è¯•Desc2(String), test2(String), null, null, 2(Integer), 2020-09-02 16:52:01.512(Timestamp), 2020-09-02 16:52:01.512(Timestamp), 0(Integer), 1(Long), 1(Long)
+2020-09-02 16:52:02.106 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2020-09-02 16:52:02.107 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name, product_desc, img_add, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-09-02 16:52:02.107 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: test3(String), æµ‹è¯•Desc3(String), test3(String), null, null, 3(Integer), 2020-09-02 16:52:01.512(Timestamp), 2020-09-02 16:52:01.512(Timestamp), 1(Integer), 1(Long), 1(Long)
+2020-09-02 16:52:02.112 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2020-09-02 16:52:02.132 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==>  Preparing: INSERT INTO tb_product_img(img_add, img_desc, priority, create_time, product_id) VALUES ( ?, ?, ?, ?, ? ) , ( ?, ?, ?, ?, ? ) 
+2020-09-02 16:52:02.132 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==> Parameters: å›¾ç‰‡1(String), æµ‹è¯•å›¾ç‰‡1(String), 1(Integer), 2020-09-02 16:52:02.115(Timestamp), 1(Long), å›¾ç‰‡2(String), null, 1(Integer), 2020-09-02 16:52:02.115(Timestamp), 1(Long)
+2020-09-02 16:52:02.136 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - <==    Updates: 2
+2020-09-02 16:52:02.138 [main] DEBUG com.imooc.o2o.dao.ProductDao.queryProductById - ==>  Preparing: SELECT p.product_id, p.product_name, p.product_desc, p.img_add, p.normal_price, p.promotion_price, p.priority, p.create_time, p.last_edit_time, p.enable_status, p.product_category_id, p.shop_id, pm.product_img_id, pm.img_add AS detail_img, pm.img_desc, pm.priority, pm.create_time FROM tb_product p LEFT JOIN tb_product_img pm ON p.product_id = pm.product_id WHERE p.product_id = ? ORDER BY pm.priority DESC 
+2020-09-02 16:52:02.138 [main] DEBUG com.imooc.o2o.dao.ProductDao.queryProductById - ==> Parameters: 1(Long)
+2020-09-02 16:52:02.148 [main] DEBUG com.imooc.o2o.dao.ProductDao.queryProductById - <==      Total: 2
+2020-09-02 16:52:02.153 [main] DEBUG c.i.o.d.ProductImgDao.deleteProductImgByProductId - ==>  Preparing: DELETE FROM tb_product_img WHERE product_id = ? 
+2020-09-02 16:52:02.153 [main] DEBUG c.i.o.d.ProductImgDao.deleteProductImgByProductId - ==> Parameters: 1(Long)
+2020-09-02 16:52:02.158 [main] DEBUG c.i.o.d.ProductImgDao.deleteProductImgByProductId - <==    Updates: 2
+2020-09-02 17:25:52.148 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name, product_desc, img_add, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-09-02 17:25:52.183 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: æµ‹è¯•1(String), æµ‹è¯•Desc1(String), test1(String), null, null, 1(Integer), 2020-09-02 17:25:51.681(Timestamp), 2020-09-02 17:25:51.681(Timestamp), 1(Integer), 1(Long), 1(Long)
+2020-09-02 17:25:52.275 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2020-09-02 17:25:52.290 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name, product_desc, img_add, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-09-02 17:25:52.291 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: æµ‹è¯•2(String), æµ‹è¯•Desc2(String), test2(String), null, null, 2(Integer), 2020-09-02 17:25:51.681(Timestamp), 2020-09-02 17:25:51.681(Timestamp), 0(Integer), 1(Long), 1(Long)
+2020-09-02 17:25:52.295 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2020-09-02 17:25:52.296 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name, product_desc, img_add, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-09-02 17:25:52.296 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: test3(String), æµ‹è¯•Desc3(String), test3(String), null, null, 3(Integer), 2020-09-02 17:25:51.681(Timestamp), 2020-09-02 17:25:51.681(Timestamp), 1(Integer), 1(Long), 1(Long)
+2020-09-02 17:25:52.299 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2020-09-02 17:25:52.318 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==>  Preparing: INSERT INTO tb_product_img(img_add, img_desc, priority, create_time, product_id) VALUES ( ?, ?, ?, ?, ? ) , ( ?, ?, ?, ?, ? ) 
+2020-09-02 17:25:52.319 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==> Parameters: å›¾ç‰‡1(String), æµ‹è¯•å›¾ç‰‡1(String), 1(Integer), 2020-09-02 17:25:52.302(Timestamp), 1(Long), å›¾ç‰‡2(String), null, 1(Integer), 2020-09-02 17:25:52.302(Timestamp), 1(Long)
+2020-09-02 17:25:52.323 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - <==    Updates: 2
+2020-09-02 17:25:52.325 [main] DEBUG com.imooc.o2o.dao.ProductDao.queryProductById - ==>  Preparing: SELECT p.product_id, p.product_name, p.product_desc, p.img_add, p.normal_price, p.promotion_price, p.priority, p.create_time, p.last_edit_time, p.enable_status, p.product_category_id, p.shop_id, pm.product_img_id, pm.img_add AS detail_img, pm.img_desc, pm.priority, pm.create_time FROM tb_product p LEFT JOIN tb_product_img pm ON p.product_id = pm.product_id WHERE p.product_id = ? ORDER BY pm.priority DESC 
+2020-09-02 17:25:52.325 [main] DEBUG com.imooc.o2o.dao.ProductDao.queryProductById - ==> Parameters: 1(Long)
+2020-09-02 17:25:52.335 [main] DEBUG com.imooc.o2o.dao.ProductDao.queryProductById - <==      Total: 2
+2020-09-02 17:25:52.341 [main] DEBUG c.i.o.d.ProductImgDao.deleteProductImgByProductId - ==>  Preparing: DELETE FROM tb_product_img WHERE product_id = ? 
+2020-09-02 17:25:52.342 [main] DEBUG c.i.o.d.ProductImgDao.deleteProductImgByProductId - ==> Parameters: 1(Long)
+2020-09-02 17:25:52.347 [main] DEBUG c.i.o.d.ProductImgDao.deleteProductImgByProductId - <==    Updates: 2
+2020-09-02 17:25:52.354 [main] DEBUG com.imooc.o2o.dao.ProductDao.updateProduct - ==>  Preparing: UPDATE tb_product SET product_name = ?, product_category_id = ? WHERE product_id = ? AND shop_id = ? 
+2020-09-02 17:25:52.355 [main] DEBUG com.imooc.o2o.dao.ProductDao.updateProduct - ==> Parameters: Second product(String), 2(Long), 1(Long), 1(Long)
+2020-09-02 17:25:52.359 [main] DEBUG com.imooc.o2o.dao.ProductDao.updateProduct - <==    Updates: 1
