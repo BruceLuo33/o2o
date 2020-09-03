@@ -79,8 +79,8 @@ public class ProductServiceImpl implements ProductService {
     // 1. 若缩略图参数有值，则处理缩略图；若原先存在缩略图，则先删除再添加新图，之后获取缩略图相对路径并赋值给 product
     // 2. 若商品详情图列表参数有值，对商品详情图列表进行同样的操作
     // 3. 将 tb_product_img 下面的该商品原先的商品详情图全部清除
-    // 4. 更新 tb_product 的信息
-    public ProductExecution modifyProdyct(Product product, ImageHolder thumbnail, List<ImageHolder> productImgHolderList) throws ProductOperationException {
+    // 4. 更新 tb_product & tb_product 的信息
+    public ProductExecution modifyProduct(Product product, ImageHolder thumbnail, List<ImageHolder> productImgHolderList) throws ProductOperationException {
         // 空值判断
         if (product != null && product.getShop() != null && product.getShop().getShopId() != null) {
             // 给商品设置上默认属性
@@ -97,10 +97,36 @@ public class ProductServiceImpl implements ProductService {
             // 如果有新存入的商品详情图，则将原来的删除，并添加新的图片
             if (productImgHolderList != null && productImgHolderList.size() > 0) {
                 deleteProductImgList(product.getProductId());
+                addProductImgList(product, productImgHolderList);
             }
+            try {
+                // 更新商品信息
+                int effectedNum = productDao.updateProduct(product);
+                if (effectedNum < 0) {
+                    throw new ProductOperationException("更新商品信息失败");
+                }
+                return new ProductExecution(ProductStateEnum.SUCCESS, product);
+            } catch (Exception e) {
+                throw new ProductOperationException("更新商品信息失败： " + e.toString());
+            }
+        } else {
+            return new ProductExecution(ProductStateEnum.EMPTY);
         }
+    }
 
-        return null;
+    /**
+     * 删除某个商品下的所有详情图
+     * @param productId
+     */
+    private void deleteProductImgList(long productId) {
+        // 根据productId获取原来的图片
+        List<ProductImg> productImgList = productImgDao.queryProductImgList(productId);
+        // 干掉原来的图片
+        for (ProductImg productImg : productImgList) {
+            ImageUtil.deleteFileOrPath(productImg.getImgAdd());
+        }
+        // 删除数据库里原有图片的信息
+        productImgDao.deleteProductImgByProductId(productId);
     }
 
     /**

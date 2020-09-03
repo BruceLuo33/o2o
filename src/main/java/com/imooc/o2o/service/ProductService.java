@@ -50,6 +50,6 @@ public interface ProductService {
      * @return
      * @throws ProductOperationException
      */
-    ProductExecution modifyProdyct(Product product, ImageHolder thumbnail, List<ImageHolder> productImgHolderList)
+    ProductExecution modifyProduct(Product product, ImageHolder thumbnail, List<ImageHolder> productImgHolderList)
         throws ProductOperationException;
 }
