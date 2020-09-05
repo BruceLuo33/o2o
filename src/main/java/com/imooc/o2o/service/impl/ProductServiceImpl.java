@@ -80,21 +80,22 @@ public class ProductServiceImpl implements ProductService {
     // 2. 若商品详情图列表参数有值，对商品详情图列表进行同样的操作
     // 3. 将 tb_product_img 下面的该商品原先的商品详情图全部清除
     // 4. 更新 tb_product & tb_product 的信息
-    public ProductExecution modifyProduct(Product product, ImageHolder thumbnail, List<ImageHolder> productImgHolderList) throws ProductOperationException {
+    public ProductExecution modifyProduct(Product product, ImageHolder thumbnail, List<ImageHolder> productImgHolderList)
+            throws ProductOperationException {
         // 空值判断
         if (product != null && product.getShop() != null && product.getShop().getShopId() != null) {
             // 给商品设置上默认属性
             product.setLastEditTime(new Date());
-            // 若商品缩略图不为空且原有缩略图不为空，则删除原有缩略图并添加
+            // 若商品缩略图不为空且原有缩略图不为空则删除原有缩略图并添加
             if (thumbnail != null) {
-                // 先获取一遍原有信息，因为原来的信息中有原图片地址
+                // 先获取一遍原有信息，因为原来的信息里有原图片地址
                 Product tempProduct = productDao.queryProductById(product.getProductId());
                 if (tempProduct.getImgAdd() != null) {
                     ImageUtil.deleteFileOrPath(tempProduct.getImgAdd());
                 }
                 addThumbnail(product, thumbnail);
             }
-            // 如果有新存入的商品详情图，则将原来的删除，并添加新的图片
+            // 如果有新存入的商品详情图，则将原先的删除，并添加新的图片
             if (productImgHolderList != null && productImgHolderList.size() > 0) {
                 deleteProductImgList(product.getProductId());
                 addProductImgList(product, productImgHolderList);
@@ -102,12 +103,12 @@ public class ProductServiceImpl implements ProductService {
             try {
                 // 更新商品信息
                 int effectedNum = productDao.updateProduct(product);
-                if (effectedNum < 0) {
+                if (effectedNum <= 0) {
                     throw new ProductOperationException("更新商品信息失败");
                 }
                 return new ProductExecution(ProductStateEnum.SUCCESS, product);
             } catch (Exception e) {
-                throw new ProductOperationException("更新商品信息失败： " + e.toString());
+                throw new ProductOperationException("更新商品信息失败:" + e.toString());
             }
         } else {
             return new ProductExecution(ProductStateEnum.EMPTY);
