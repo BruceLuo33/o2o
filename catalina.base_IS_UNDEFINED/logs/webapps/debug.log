@@ -121,3 +121,21 @@
 2020-09-05 18:08:43.135 [main] DEBUG com.imooc.o2o.dao.ProductDao.updateProduct - ==>  Preparing: UPDATE tb_product SET product_name = ?, product_category_id = ? WHERE product_id = ? AND shop_id = ? 
 2020-09-05 18:08:43.135 [main] DEBUG com.imooc.o2o.dao.ProductDao.updateProduct - ==> Parameters: Second product(String), 2(Long), 1(Long), 1(Long)
 2020-09-05 18:08:43.136 [main] DEBUG com.imooc.o2o.dao.ProductDao.updateProduct - <==    Updates: 1
+2020-09-05 23:05:46.505 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name, product_desc, img_add, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-09-05 23:05:46.544 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: 测试1(String), 测试Desc1(String), test1(String), null, null, 1(Integer), 2020-09-05 23:05:46.007(Timestamp), 2020-09-05 23:05:46.007(Timestamp), 1(Integer), 1(Long), 1(Long)
+2020-09-05 23:05:46.602 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2020-09-05 23:05:46.618 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name, product_desc, img_add, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-09-05 23:05:46.619 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: 测试2(String), 测试Desc2(String), test2(String), null, null, 2(Integer), 2020-09-05 23:05:46.007(Timestamp), 2020-09-05 23:05:46.007(Timestamp), 0(Integer), 1(Long), 1(Long)
+2020-09-05 23:05:46.623 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2020-09-05 23:05:46.624 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name, product_desc, img_add, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-09-05 23:05:46.624 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: test3(String), 测试Desc3(String), test3(String), null, null, 3(Integer), 2020-09-05 23:05:46.007(Timestamp), 2020-09-05 23:05:46.007(Timestamp), 1(Integer), 1(Long), 1(Long)
+2020-09-05 23:05:46.628 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2020-09-05 23:05:46.656 [main] DEBUG com.imooc.o2o.dao.ProductDao.queryProductList - ==>  Preparing: SELECT product_id, product_name, product_desc, img_add, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id FROM tb_product ORDER BY priority DESC LIMIT ?, ?; 
+2020-09-05 23:05:46.656 [main] DEBUG com.imooc.o2o.dao.ProductDao.queryProductList - ==> Parameters: 0(Integer), 3(Integer)
+2020-09-05 23:05:46.665 [main] DEBUG com.imooc.o2o.dao.ProductDao.queryProductList - <==      Total: 3
+2020-09-05 23:05:46.670 [main] DEBUG com.imooc.o2o.dao.ProductDao.queryProductCount - ==>  Preparing: SELECT count(1) FROM tb_product 
+2020-09-05 23:05:46.671 [main] DEBUG com.imooc.o2o.dao.ProductDao.queryProductCount - ==> Parameters: 
+2020-09-05 23:05:46.672 [main] DEBUG com.imooc.o2o.dao.ProductDao.queryProductCount - <==      Total: 1
+2020-09-05 23:05:46.675 [main] DEBUG com.imooc.o2o.dao.ProductDao.queryProductList - ==>  Preparing: SELECT product_id, product_name, product_desc, img_add, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id FROM tb_product WHERE product_name like '%测试%' ORDER BY priority DESC LIMIT ?, ?; 
+2020-09-05 23:05:46.675 [main] DEBUG com.imooc.o2o.dao.ProductDao.queryProductList - ==> Parameters: 0(Integer), 3(Integer)
+2020-09-05 23:05:46.677 [main] DEBUG com.imooc.o2o.dao.ProductDao.queryProductList - <==      Total: 3
