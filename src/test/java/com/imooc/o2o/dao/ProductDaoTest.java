@@ -6,6 +6,7 @@ import com.imooc.o2o.entity.ProductCategory;
 import com.imooc.o2o.entity.ProductImg;
 import com.imooc.o2o.entity.Shop;
 import org.junit.FixMethodOrder;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -80,7 +81,26 @@ public class ProductDaoTest extends BaseTest {
         assertEquals(1, effectedNum);
     }
 
+
     @Test
+    public void testBQueryProductList() throws Exception {
+        Product productCondition = new Product();
+        // 分页查询，预期返回三条结果
+        List<Product> productList = productDao.queryProductList(productCondition, 0, 3);
+        assertEquals(3, productList.size());
+        // 查询名称为测试的商品总数
+        int count = productDao.queryProductCount(productCondition);
+        assertEquals(8, count);
+        // 使用名称模糊查询，预期返回5条结果
+        productCondition.setProductName("测试");
+        productList = productDao.queryProductList(productCondition, 0, 3);
+        assertEquals(5, productList.size());
+        count = productDao.queryProductCount(productCondition);
+        assertEquals(5, count);
+    }
+
+    @Test
+    @Ignore
     public void testCQueryProductByProductId() throws Exception {
         long productId = 1;
         // 初始化两个商品详情图实例作为 productId 为 1 的商品下的详情图片
@@ -112,6 +132,7 @@ public class ProductDaoTest extends BaseTest {
         assertEquals(2, effectedNum);
     }
     @Test
+    @Ignore
     public void testDUpdateProduct() throws Exception {
         Product product = new Product();
         ProductCategory productCategory = new ProductCategory();
