@@ -23,7 +23,7 @@ public interface ProductService {
      * @param pageSize
      * @return
      */
-//    ProductExecution getProductList(Product productCondition, int pageIndex, int pageSize);
+    ProductExecution getProductList(Product productCondition, int pageIndex, int pageSize);
 
     /**
      * 通过商品Id查询唯一的商品信息
