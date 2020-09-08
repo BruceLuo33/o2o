@@ -7,20 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6f992b9-233d-4855-a17f-f812b7b99873" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productmanagement.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/productmanagement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/o2o/dao/HeadLineDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/HeadLineDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/imooc/o2o/dao/HeadLineDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/webapps/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/webapps/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/o2o/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/o2o/dao/ProductDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/impl/ProductCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/impl/ProductCategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/shopadmin/ShopAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/shopadmin/ShopAdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ProductDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ProductDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/imooc/o2o/dao/ProductDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/imooc/o2o/dao/ProductDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/o2o/dao/ProductDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/imooc/o2o/dao/ProductDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/o2o/web/shopadmin/ShopAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/imooc/o2o/web/shopadmin/ShopAdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ProductDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/ProductDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/o2o/WEB-INF/classes/com/imooc/o2o/web/shopadmin/ShopAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/o2o/WEB-INF/classes/com/imooc/o2o/web/shopadmin/ShopAdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/imooc/o2o/dao/ProductDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/imooc/o2o/dao/ProductDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/o2o/service/impl/ProductCategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/imooc/o2o/service/impl/ProductCategoryServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +25,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="Interface" />
+        <option value="spring-beans.schema" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -69,7 +63,22 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="JUnit.ProductDaoTest.testEUpdateProductCategoryToNull">
+  <component name="RunManager" selected="JUnit.HeadLineDaoTest">
+    <configuration name="HeadLineDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="o2o" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.imooc.o2o.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.imooc.o2o.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.imooc.o2o.dao.HeadLineDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="o2o" />
       <extension name="coverage">
@@ -128,22 +137,6 @@
       <option name="PACKAGE_NAME" value="com.imooc.o2o.dao" />
       <option name="MAIN_CLASS_NAME" value="com.imooc.o2o.dao.ProductDaoTest" />
       <option name="METHOD_NAME" value="testEUpdateProductCategoryToNull" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductServiceTest.testModifyProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="o2o" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.imooc.o2o.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.imooc.o2o.service" />
-      <option name="MAIN_CLASS_NAME" value="com.imooc.o2o.service.ProductServiceTest" />
-      <option name="METHOD_NAME" value="testModifyProduct" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -226,18 +219,18 @@
     <list>
       <item itemvalue="JUnit.ProductDaoTest" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.57" />
-      <item itemvalue="JUnit.ProductServiceTest.testModifyProduct" />
       <item itemvalue="JUnit.ProductDaoTest.testBQueryProductList" />
       <item itemvalue="JUnit.ProductDaoTest.testDUpdateProduct" />
       <item itemvalue="JUnit.ProductDaoTest.testEUpdateProductCategoryToNull" />
+      <item itemvalue="JUnit.HeadLineDaoTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HeadLineDaoTest" />
         <item itemvalue="JUnit.ProductDaoTest.testEUpdateProductCategoryToNull" />
         <item itemvalue="JUnit.ProductDaoTest.testDUpdateProduct" />
         <item itemvalue="JUnit.ProductDaoTest" />
         <item itemvalue="JUnit.ProductDaoTest.testBQueryProductList" />
-        <item itemvalue="JUnit.ProductServiceTest.testModifyProduct" />
       </list>
     </recent_temporary>
   </component>
@@ -278,7 +271,7 @@
       <workItem from="1598859645886" duration="5630000" />
       <workItem from="1598942679693" duration="175000" />
       <workItem from="1598943903928" duration="425000" />
-      <workItem from="1598944593358" duration="49251000" />
+      <workItem from="1598944593358" duration="54000000" />
     </task>
     <servers />
   </component>
@@ -306,26 +299,26 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="430" height="466" key="DebuggerActiveHint/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1599113864843" />
-    <state width="1877" height="315" key="GridCell.Tab.0.bottom" timestamp="1599364361679">
+    <state width="1877" height="315" key="GridCell.Tab.0.bottom" timestamp="1599446833144">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1024" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1598944328851" />
-    <state width="1877" height="315" key="GridCell.Tab.0.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1599364361679" />
-    <state width="1877" height="315" key="GridCell.Tab.0.center" timestamp="1599364361679">
+    <state width="1877" height="315" key="GridCell.Tab.0.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1599446833144" />
+    <state width="1877" height="315" key="GridCell.Tab.0.center" timestamp="1599446833144">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1024" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1598944328851" />
-    <state width="1877" height="315" key="GridCell.Tab.0.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1599364361679" />
-    <state width="1877" height="315" key="GridCell.Tab.0.left" timestamp="1599364361679">
+    <state width="1877" height="315" key="GridCell.Tab.0.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1599446833144" />
+    <state width="1877" height="315" key="GridCell.Tab.0.left" timestamp="1599446833144">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1024" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1598944328851" />
-    <state width="1877" height="315" key="GridCell.Tab.0.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1599364361679" />
-    <state width="1877" height="315" key="GridCell.Tab.0.right" timestamp="1599364361679">
+    <state width="1877" height="315" key="GridCell.Tab.0.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1599446833144" />
+    <state width="1877" height="315" key="GridCell.Tab.0.right" timestamp="1599446833144">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1024" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1598944328851" />
-    <state width="1877" height="315" key="GridCell.Tab.0.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1599364361679" />
+    <state width="1877" height="315" key="GridCell.Tab.0.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1599446833144" />
     <state width="1567" height="364" key="GridCell.Tab.1.bottom" timestamp="1599364343172">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
