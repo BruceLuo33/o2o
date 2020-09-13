@@ -6,3 +6,9 @@
 2020-09-13 15:43:59.935 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id =?) AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id 
 2020-09-13 15:43:59.935 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 7(Long)
 2020-09-13 15:43:59.936 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2020-09-13 16:38:14.065 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_add, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id =?) AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?, ?; 
+2020-09-13 16:38:14.095 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==> Parameters: 7(Long), 0(Integer), 5(Integer)
+2020-09-13 16:38:14.117 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - <==      Total: 2
+2020-09-13 16:38:14.124 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id =?) AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id 
+2020-09-13 16:38:14.124 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 7(Long)
+2020-09-13 16:38:14.125 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
