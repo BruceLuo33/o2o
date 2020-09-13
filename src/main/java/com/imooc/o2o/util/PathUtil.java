@@ -6,7 +6,8 @@ public class PathUtil {
      * 2. 依据不同业务需求，返回不同子路径
      * @return
      */
-    private static String separator = System.getProperty("file.separator");
+//    private static String separator = System.getProperty("file.separator");
+    private static String separator = "/";
     public static String getImgBasePath() {
 
         String os = System.getProperty("os.name");
