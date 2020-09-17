@@ -103,12 +103,6 @@ $(function() {
                 if (total >= maxItems) {
                     // 隐藏提示符
                     $('.infinite-scroll-preloader').hide();
-
-                    // 加载完毕，则注销无限加载事件，以方不必要的加载
-                //     $.detachInfiniteScroll($('.infinite-scroll'));
-                //     // 删除加载提示符
-                //     $('.infinite-scroll-preloader').remove();
-                // }
                 } else {
                     $('.infinite-scroll-preloader').show();
                 }
