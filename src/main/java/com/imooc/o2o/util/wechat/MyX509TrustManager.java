@@ -25,4 +25,3 @@ public class MyX509TrustManager implements X509TrustManager {
         return null;
     }
 }
-

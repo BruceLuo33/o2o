@@ -29,6 +29,7 @@ import com.imooc.o2o.dto.WechatUser;
  * @date 2020-09-2020/9/20 15:52
  */
 public class WechatUtil {
+
     private static Logger log = LoggerFactory.getLogger(WechatUtil.class);
 
     /**
@@ -174,5 +175,5 @@ public class WechatUtil {
         }
         return buffer.toString();
     }
-
 }
+

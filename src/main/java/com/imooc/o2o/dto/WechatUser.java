@@ -1,14 +1,23 @@
 package com.imooc.o2o.dto;
 
+import java.io.Serializable;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 /**
  * WechatUser
  * 微信用户实体类
+ *
  * @author luoyi
  * @date 2020-09-2020/9/20 15:51
  */
-public class WechatUser {
+
+public class WechatUser implements Serializable {
+
+    /**
+     *
+     */
     private static final long serialVersionUID = -4684067645282292327L;
 
     // openId,标识该公众号下面的该用户的唯一Id
@@ -35,14 +44,9 @@ public class WechatUser {
     // 语言
     @JsonProperty("language")
     private String language;
-
     // 用户权限，这里没什么作用
     @JsonProperty("privilege")
     private String[] privilege;
-
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
-    }
 
     public String getOpenId() {
         return openId;
@@ -116,6 +120,9 @@ public class WechatUser {
         this.privilege = privilege;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "openId:" + this.getOpenId() + ",nikename:" + this.getNickName();
+    }
 }
+
