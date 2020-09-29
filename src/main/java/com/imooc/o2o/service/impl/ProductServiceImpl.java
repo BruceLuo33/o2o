@@ -155,8 +155,8 @@ public class ProductServiceImpl implements ProductService {
      */
     private void addThumbnail(Product product, ImageHolder thumbnail) {
         String dest = PathUtil.getShopImagePath(product.getShop().getShopId());
-        String thumbnailAddr = ImageUtil.generateThumbnail(thumbnail, dest);
-        product.setImgAdd(thumbnailAddr);
+        String thumbnailAdd = ImageUtil.generateThumbnail(thumbnail, dest);
+        product.setImgAdd(thumbnailAdd);
     }
 
     /**
@@ -171,9 +171,9 @@ public class ProductServiceImpl implements ProductService {
         List<ProductImg> productImgList = new ArrayList<ProductImg>();
         // 遍历图片一次去处理，并添加进productImg实体类里
         for (ImageHolder productImgHolder : productImgHolderList) {
-            String imgAddr = ImageUtil.generateNormalImg(productImgHolder, dest);
+            String imgAdd = ImageUtil.generateNormalImg(productImgHolder, dest);
             ProductImg productImg = new ProductImg();
-            productImg.setImgAdd(imgAddr);
+            productImg.setImgAdd(imgAdd);
             productImg.setProductId(product.getProductId());
             productImg.setCreateTime(new Date());
             productImgList.add(productImg);
