@@ -28,7 +28,7 @@ public class ImageUtil {
      * @param cFile
      * @return
      */
-    public static File tranferCommonsMultipartFileToFile(CommonsMultipartFile cFile) {
+    public static File transferCommonsMultipartFileToFile(CommonsMultipartFile cFile) {
         File newFile = new File(cFile.getOriginalFilename());
         try {
             cFile.transferTo(newFile);
@@ -58,7 +58,7 @@ public class ImageUtil {
         // 注释：原本的 ImageIO 应该读取 basePath 的内容，但是因为target 文件夹发布内容的时候，目录会被清空，因此需要定位到main下面去
         try {
             Thumbnails.of(thumbnail.getImage()).size(200,200)
-                    .watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File("C:\\Users\\luoyi\\IdeaProjects\\o2o\\src\\main\\resources\\watermark.jpg")), 0.25f)
+                    .watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File("C:/Users/luoyi/IdeaProjects/o2o/src/main/resources/watermark.jpg")), 0.25f)
                     .outputQuality(0.8f).toFile(dest);
         } catch (IOException e) {
             logger.error(e.toString());
@@ -147,9 +147,9 @@ public class ImageUtil {
     }
 
     public static void main(String[] args) throws IOException {
-        Thumbnails.of(new File("C:\\Users\\luoyi\\Desktop\\robin.jpg")).size(200,200)
+        Thumbnails.of(new File("C:/Users/luoyi/Desktop/robin.jpg")).size(200,200)
                 .watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(basePath + "/watermark.jpg")), 0.25f)
-                .outputQuality(0.8f).toFile("C:\\Users\\luoyi\\Desktop\\robinnew.jpg");
+                .outputQuality(0.8f).toFile("C:/Users/luoyi/Desktop/robinnew.jpg");
     }
 
 

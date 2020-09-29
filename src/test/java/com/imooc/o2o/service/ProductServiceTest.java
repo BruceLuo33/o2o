@@ -51,13 +51,13 @@ public class ProductServiceTest extends BaseTest {
         product.setCreateTime(new Date());
         product.setEnableStatus(ProductStateEnum.SUCCESS.getState());
         // 创建缩略图文件流
-        File thumbnailFile = new File("C:\\Users\\luoyi\\Desktop\\robin.jpg");
+        File thumbnailFile = new File("C:/Users/luoyi/Desktop/robin.jpg");
         InputStream is = new FileInputStream(thumbnailFile);
         ImageHolder thumbnail = new ImageHolder(thumbnailFile.getName(), is);
         // 创建两个商品详情图文件流并将他们添加到详情图列表中
-        File productImg1 = new File("C:\\Users\\luoyi\\Desktop\\robin.jpg");
+        File productImg1 = new File("C:/Users/luoyi/Desktop/robin.jpg");
         InputStream is1 = new FileInputStream(productImg1);
-        File productImg2 = new File("C:\\Users\\luoyi\\Desktop\\sword.jpg");
+        File productImg2 = new File("C:/Users/luoyi/Desktop/sword.jpg");
         InputStream is2 = new FileInputStream(productImg2);
         List<ImageHolder> productImgList = new ArrayList<ImageHolder>();
         productImgList.add(new ImageHolder(productImg1.getName(), is1));
@@ -82,13 +82,13 @@ public class ProductServiceTest extends BaseTest {
         product.setProductName("正式的商品");
         product.setProductDesc("正式的商品");
         // 创建缩略图文件流
-        File thumbnailFile = new File("C:\\Users\\luoyi\\Desktop\\sword.jpg");
+        File thumbnailFile = new File("C:/Users/luoyi/Desktop/sword.jpg");
         InputStream is = new FileInputStream(thumbnailFile);
         ImageHolder thumbnail = new ImageHolder(thumbnailFile.getName(), is);
         // 创建两个商品详情图文件流并将他们添加到详情图列表中
-        File productImg1 = new File("C:\\Users\\luoyi\\Desktop\\robin.jpg");
+        File productImg1 = new File("C:/Users/luoyi/Desktop/robin.jpg");
         InputStream is1 = new FileInputStream(productImg1);
-        File productImg2 = new File("C:\\Users\\luoyi\\Desktop\\yangchaoyue.jpg");
+        File productImg2 = new File("C:/Users/luoyi/Desktop/yangchaoyue.jpg");
         InputStream is2 = new FileInputStream(productImg2);
         List<ImageHolder> productImgList = new ArrayList<ImageHolder>();
         productImgList.add(new ImageHolder(productImg1.getName(), is1));
