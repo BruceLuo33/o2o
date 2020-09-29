@@ -37,7 +37,7 @@ $(function() {
                                 .Format("yyyy-MM-dd"));
                         $('#shop-name').html(shop.shopName);
                         $('#shop-desc').html(shop.shopDesc);
-                        $('#shop-addr').html(shop.shopAddr);
+                        $('#shop-add').html(shop.shopAdd);
                         $('#shop-phone').html(shop.phone);
                         // 获取后台返回的该店铺的商品类别列表
                         var productCategoryList = data.productCategoryList;

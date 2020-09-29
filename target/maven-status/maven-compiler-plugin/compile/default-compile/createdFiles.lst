@@ -2,9 +2,13 @@ com\imooc\o2o\service\AreaService.class
 com\imooc\o2o\entity\ShopCategory.class
 com\imooc\o2o\service\impl\ProductServiceImpl.class
 com\imooc\o2o\exceptions\ProductCategoryOperationException.class
+com\imooc\o2o\service\HeadLineService.class
 com\imooc\o2o\exceptions\ShopOperationException.class
+com\imooc\o2o\web\frontend\MainPageController.class
 com\imooc\o2o\entity\Area.class
+com\imooc\o2o\dao\HeadLineDao.class
 com\imooc\o2o\dto\ShopExecution.class
+com\imooc\o2o\web\frontend\FrontendController.class
 com\imooc\o2o\entity\ProductImg.class
 com\imooc\o2o\dao\AreaDao.class
 com\imooc\o2o\service\impl\ShopServiceImpl.class
@@ -21,6 +25,7 @@ com\imooc\o2o\dao\ProductImgDao.class
 com\imooc\o2o\dto\ProductExecution.class
 com\imooc\o2o\entity\WechatAuth.class
 com\imooc\o2o\enums\ProductCategoryStateEnum.class
+com\imooc\o2o\service\impl\HeadLineServiceImpl.class
 com\imooc\o2o\service\ShopCategoryService.class
 com\imooc\o2o\util\ImageUtil.class
 com\imooc\o2o\entity\Product.class
